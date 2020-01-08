@@ -1,4 +1,4 @@
-package com.acme.chemicalproducts.error;
+package com.acme.chemicalproducts.data;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

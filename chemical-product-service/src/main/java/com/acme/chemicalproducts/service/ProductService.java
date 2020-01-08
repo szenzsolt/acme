@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Service
 public class ProductService {
@@ -23,6 +24,10 @@ public class ProductService {
 
     public void removeProduct(Long id) {
         productRepository.removeById(id);
+    }
+
+    public List<Product> getAllProduct() {
+        return productRepository.findAll();
     }
 
     private BigDecimal calculatePrice(Product product){

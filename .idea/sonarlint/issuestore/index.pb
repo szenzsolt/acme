@@ -1,0 +1,23 @@
+
+e
+5chemical-product-service/chemical-product-service.iml,8/f/8fa65b63add85b3ac405d75e4b2e95a22a808cbf
+ù
+mchemical-product-service/src/test/java/com/acme/chemicalproducts/controller/ProductStorageControllerTest.java,1/1/11a4097c5855b6c809a693be0726260bd8a676d5
+å
+\chemical-product-service/src/main/java/com/acme/chemicalproducts/service/ProductService.java,a/c/ac03264d57e84660be887367cc695c27c181aae6
+Ç
+Rchemical-product-service/src/main/java/com/acme/chemicalproducts/data/Product.java,a/e/aee2ac041bae57ee9091e30d231035ed3c3af3bb
+C
+name-server/pom.xml,e/8/e87489d03258c264d1ae07ab786201e11826cb0b
+x
+Hname-server/src/main/java/com/acme/nameserver/NameServerApplication.java,c/9/c92323d785190b4b00c8877125d66f1583cd4fc5
+P
+ chemical-product-service/pom.xml,9/6/9673d296268c0a29db8a450296872e9e9f3b5bcb
+I
+insurance-service/pom.xml,c/0/c09ac54e14e6a611961024502bf8d822d88d3c90
+ì
+cinsurance-service/src/main/java/com/acme/insurancefeeservice/controller/InsuranceFeeController.java,d/1/d1b7a69548129288f3f075f5a379f125d540d4ba
+â
+Ychemical-product-service/src/main/java/com/acme/chemicalproducts/ProductStorageProxy.java,d/5/d5e84ecf328ce35ee0b34b56f9dc6b17844621d4
+ô
+ichemical-product-service/src/main/java/com/acme/chemicalproducts/controller/ProductStorageController.java,4/f/4fabfe1357e2b9dcfbb028eec31dd287ec41c618

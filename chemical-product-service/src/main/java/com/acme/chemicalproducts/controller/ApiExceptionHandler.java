@@ -1,6 +1,6 @@
 package com.acme.chemicalproducts.controller;
 
-import com.acme.chemicalproducts.error.ApiErrorResponse;
+import com.acme.chemicalproducts.data.ApiErrorResponse;
 import com.acme.chemicalproducts.error.FeeNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

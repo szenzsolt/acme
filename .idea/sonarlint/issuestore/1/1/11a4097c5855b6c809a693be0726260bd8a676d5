@@ -1,0 +1,10 @@
+
+rsquid:S1450%"VRemove the "baseUrl" field and declare it as a local variable in the relevant methods.(†ž³Úÿÿÿÿÿ
+lsquid:S1450*"URemove the "amount" field and declare it as a local variable in the relevant methods.(æŒ”š
+Xsquid:S1075#"ARefactor your code to get this URI from a customizable parameter.(‹é¤¨
+Xsquid:S1075$"ARefactor your code to get this URI from a customizable parameter.(èÆÿü
+8squid:S21110"!Use "BigDecimal.valueOf" instead.(ýé¡Ç
+ª%squid:RedundantThrowsDeclarationCheckE"tRemove the declaration of thrown exception 'java.net.URISyntaxException', as it cannot be thrown from method's body.(Û¼§Îþÿÿÿÿ
+Rsquid:S2696g"6Make the enclosing method "static" or remove this set.(ƒüÍåüÿÿÿÿ
+Nsquid:S1068$"7Remove this unused "DELETE_PRODUCT_PATH" private field.(èÆÿü
+asquid:CommentedOutCodeLineT"<This block of commented-out lines of code should be removed.(¤ÓŽu

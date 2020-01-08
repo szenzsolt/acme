@@ -23,7 +23,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.when;
 
-@RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class ProductStorageControllerTest {
     @MockBean
@@ -33,7 +32,6 @@ class ProductStorageControllerTest {
     private int serverPort;
 
     private static final String ADD_PRODUCT_PATH = "/store-product/new";
-    private static final String DELETE_PRODUCT_PATH = "/store-product/delete";
     private static String baseUrl;
     private URI uri;
     private RestTemplate restTemplate;
@@ -80,24 +78,21 @@ class ProductStorageControllerTest {
         assertThat(exception.getMessage().contains("No fee found")).isTrue();
     }
 
-    /*@Test
-    public void testDeleteProduct() {
-
-    }
-
     @Test
-    public void testDeleteProductNotCorrectId() {
+    public void testNewProductAmountIsNotValid() throws URISyntaxException {
+        product.setAmount(null);
+        configureConnection(ADD_PRODUCT_PATH);
         Exception exception = assertThrows(
             HttpClientErrorException.class,
             () -> {
                 configureConnection(ADD_PRODUCT_PATH);
-                baseUrl += "/wrong";
 
-                restTemplate.delete(uri);
-                assertThat(result.getStatusCodeValue()).isEqualTo(HttpStatus.NOT_FOUND.value());
+                ResponseEntity<Product> result = restTemplate.postForEntity(uri, product, Product.class);
+                assertThat(result.getStatusCodeValue()).isEqualTo(HttpStatus.BAD_REQUEST.value());
             });
-        assertThat(exception.getgetMessage().contains("No fee found")).isTrue();
-    }*/
+        assertThat(exception.getMessage().contains("Validation Error")).isTrue();
+
+    }
 
     private void configureConnection(String path) throws URISyntaxException {
         baseUrl = "http://localhost:" + serverPort + path;
